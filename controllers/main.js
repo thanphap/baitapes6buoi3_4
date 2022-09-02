@@ -75,7 +75,8 @@ let sortTodoList = () => {
 document.getElementById("two").onclick = sortTodoList;
 
 let reverseTodoList = () => {
-    listTodo.mangTodo.reverse((a, b) => (a.content > b.content) ? 1 : ((b.content > a.content) ? -1 : 0)); 
+    sortTodoList();
+    listTodo.mangTodo.reverse(); 
     getList();
 }
 
